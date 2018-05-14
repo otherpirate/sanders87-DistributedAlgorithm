@@ -36,13 +36,13 @@ public class SandersNode extends Node {
 	public boolean inquired = false;
 	public PriorityQueue<RequestCS> deferredQ;
 	public int sent_messages = 0;
-	private boolean ja_entrou = false;
+	private boolean already_get_CS = false;
 
 	@Override
 	public void preStep() {
-		if (!in_CS && !requested_CS && wantToEnterCS() && !ja_entrou) {
+		if (!in_CS && !requested_CS && wantToEnterCS() && !already_get_CS) {
 			tryToEnterInCS();
-			ja_entrou = true;
+			already_get_CS = true;
 		}
 		relinquish = false;
 	}
