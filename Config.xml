@@ -236,7 +236,7 @@
   <CS>
     <Enter>
        <Size distribution="Uniform" min="0" max="100"/>
-       <MaxCSValue value="1" />
+       <MaxCSValue value="50" />
     </Enter>
     <Leave>
        <Duration distribution="Uniform" min="1" max="10"/>
